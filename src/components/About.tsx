@@ -28,7 +28,7 @@ export default function About() {
           transition={{ delay: 0.3 }}
           className="text-lg mb-8 leading-relaxed"
         >
-          As a professional racing driver in the Porsche Cup series, I compete in the highly demanding
+          As a semi-professional racing driver in the Porsche Cup series, I compete in the highly demanding
           992 GT3 Cup car, which requires precision driving skills and technical expertise.
         </motion.p>
 

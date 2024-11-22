@@ -12,7 +12,7 @@ export default function Achievements() {
 
   const stats = [
     { icon: Flag, value: '12+', label: 'Race Starts' },
-    { icon: Medal, value: '2', label: 'Podium Finishes' },
+    { icon: Medal, value: '2', label: 'Honorary Finishes' },
     { icon: Timer, value: '4th', label: 'Best Finish' },
   ];
 
