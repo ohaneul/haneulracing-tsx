@@ -19,7 +19,7 @@ export default function RacingProfile() {
 
   const seasonStats = [
     { value: '6', label: 'Races' },
-    { value: '2', label: 'Podiums' },
+    { value: '2', label: 'Honoraries' },
     { value: '4th', label: 'Best Finish' },
   ];
 
