@@ -17,7 +17,7 @@ export default function Hero() {
       className="relative h-screen w-full bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-        url('https://images.unsplash.com/photo-1614200187524-dc4b892acf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')`
+        url('https://images.unsplash.com/photo-1723572206884-cb2c3a7f99bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvcnNjaGUlMjA5OTIlMjBndDN8ZW58MHx8MHx8fDA%3D')`
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/30 via-transparent to-purple-900/50" />
