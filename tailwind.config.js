@@ -20,7 +20,40 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
         },
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.300'),
+            h1: {
+              color: theme('colors.primary'),
+            },
+            h2: {
+              color: theme('colors.primary'),
+            },
+            h3: {
+              color: theme('colors.primary'),
+            },
+            strong: {
+              color: theme('colors.white'),
+            },
+            a: {
+              color: theme('colors.primary'),
+              '&:hover': {
+                color: theme('colors.primary-darker'),
+              },
+            },
+            code: {
+              color: theme('colors.pink.500'),
+              backgroundColor: theme('colors.gray.800'),
+              padding: '0.25rem',
+              borderRadius: '0.25rem',
+            },
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

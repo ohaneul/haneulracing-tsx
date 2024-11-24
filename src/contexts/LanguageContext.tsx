@@ -5,7 +5,7 @@ type Language = 'en' | 'kr';
 
 interface LanguageContextType {
   language: Language;
-  toggleLanguage: () => void;
+  setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 }
 
@@ -19,18 +19,15 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     localStorage.setItem('language', language);
+    document.documentElement.lang = language;
   }, [language]);
-
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'kr' : 'en');
-  };
 
   const t = (key: string): string => {
     return translations[language][key] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );
